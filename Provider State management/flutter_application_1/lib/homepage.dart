@@ -34,7 +34,7 @@ class _HomePageState extends State<HomePage> {
           //Provider.of<CounterProvider>(context, listen: false).incrementCount();
           //here we have set the listen to false because we are making changes in the data using the events this is not the observable function
 
-          //here we are using the another method to call the provider
+          //here we are using the another method to call the provider.
           context.read<CounterProvider>().incrementCount();
         },
         child: const Icon(Icons.add),
